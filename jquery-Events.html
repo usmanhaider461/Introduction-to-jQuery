@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Events</title>
+</head>
+
+<body>
+    <h1>jQuery Events</h1>
+    <button id="btn1">Don't Click me</button>
+    <button id="btn2">Please Don't Click me</button>
+    <button id="btn3">Seriously Don't Click me</button>
+    <br>
+    <input type="text" placeholder="press an key ...">
+    <script src="lib/jquery-3.4.0.min.js"></script>
+    <script>
+        // click()
+        // on()
+        // keypress()
+
+        // $('#btn1').click(function () {
+        //     $('body').css("backgroundColor", "pink");
+        // });
+        // $('#btn2').click(function () {
+        //     $('body').css("backgroundColor", "yellow");
+        // });
+        // $('#btn3').click(function () {
+        //     $('body').css("backgroundColor", "red");
+        // })
+
+        // $('input[type="text"]').keypress(function (event) {
+        //     if (event.which === 13) {
+        //         alert("You hit enter");
+        //     }
+        //     console.log("event")
+        // })
+        $('h1').on("click", function () {
+            $(this).css('color', 'purple');
+        });
+    </script>
+</body>
+
+</html>
